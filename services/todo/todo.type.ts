@@ -1,9 +1,11 @@
 import { ObjectType, Field, ID } from 'type-graphql';
 import { TodoType } from './todo.enum';
 import PaginatedResponse from '../../helpers/paginated-response';
+import { slugify } from '../../helpers/slugify';
 
 @ObjectType()
 export default class Todo {
+
   @Field(()=>ID)
   id: string;
 
@@ -19,6 +21,27 @@ export default class Todo {
   @Field()
   description: string;
 
+  @Field()
+  createdAt: Date;
+}
+
+@ObjectType()
+export class AddTodoInput implements Partial<Todo> {
+  @Field(()=>ID)
+  id: string;
+
+  @Field()
+  slug: string;
+
+  @Field()
+  title: string;
+
+  @Field()
+  description: string;
+
+  @Field()
+  type: TodoType;
+  
   @Field()
   createdAt: Date;
 }
