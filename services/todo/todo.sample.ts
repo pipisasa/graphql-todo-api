@@ -5,39 +5,39 @@ export function createTodoSamples() {
   return plainToClass(Todo, [
     {
       id: "0",
-      title: "Hello",
-      slug: "hello",
-      description: "lorem ipsum",
+      title: "Learn GraphQL",
+      slug: "learn-graph-ql",
+      description: "We need to learn GraphQL",
       type:"todo"
     },{
       id: "1",
-      title: "Hello",
-      slug: "hello-1",
-      description: "lorem ipsum",
+      title: "Изучить хуки",
+      slug: "izuchit-hooki",
+      description: "Нам нужно изучить хуки",
       type:"doing"
     },{
       id: "2",
-      title: "Hello",
-      slug: "hello-2",
-      description: "lorem ipsum",
+      title: "Sass/Less/StyledComponents",
+      slug: "sass",
+      description: "Изучить Sass",
       type:"done"
     },{
       id: "3",
-      title: "Hello",
-      slug: "hello-3",
-      description: "lorem ipsum",
+      title: "NextJS",
+      slug: "next-js",
+      description: "Изучить NextJS",
       type:"todo"
     },{
       id: "4",
-      title: "Hello",
-      slug: "hello-4",
-      description: "lorem ipsum",
+      title: "Отпиздить Кубата",
+      slug: "otpizdit-kubata",
+      description: "Нужно отпиздить Кубата",
       type:"doing"
     },{
       id: "5",
-      title: "Hello",
-      slug: "hello-5",
-      description: "lorem ipsum",
+      title: "Проверить таски",
+      slug: "proverit-taski",
+      description: "Проверить таски студентов",
       type:"done"
     }
   ]);

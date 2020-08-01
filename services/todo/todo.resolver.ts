@@ -62,5 +62,11 @@ export class TodoResolver {
   //   console.log(todo, 'product');
 
   //   return await todo;
-  // }
+  // }'
+  @Query(() => Todo)
+  async addTodo(
+    @Arg('todo', (type) => String) todo: Todo
+  ): Promise<Todo | undefined> {
+    return await todo;
+  }
 }
