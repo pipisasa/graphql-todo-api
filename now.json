@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "graphql-api",
+  "builds": [
+    {
+      "src": "./server.ts",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/todo/graphql",
+      "dest": "server.ts"
+    }
+  ]
+}
